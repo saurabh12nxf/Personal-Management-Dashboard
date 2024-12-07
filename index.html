@@ -22,10 +22,21 @@
   <main>
     <section id="tasks">
       <h2>Tasks</h2>
+      <label for="filter">Filter:</label>
+      <select id="filter">
+        <option value="all">All</option>
+       
+        <option value="active">Active</option>
+        <option value="completed">Completed</option>
+      </select>
       <ul id="task-list"></ul>
       <input type="text" id="task-input" placeholder="New Task">
       <button id="add-task-btn">Add Task</button>
     </section>
+    
+ 
+   
+    
 
     <section id="notes">
       <h2>Notes</h2>
@@ -46,7 +57,13 @@
       <input type="text" id="goal-input" placeholder="Set a goal">
       <button id="add-goal-btn">Add Goal</button>
       <ul id="goal-list"></ul>
+      <label for="goal-date">Select Target Completion Date:</label> <input type="date" id="goal-date"> 
+      <button id="save-date-btn">Save Date</button>
+      <p id="selected-date">Selected Date: None</p>
     </section>
+    
+
+   
   </main>
 
   <script src="script.js"></script>
